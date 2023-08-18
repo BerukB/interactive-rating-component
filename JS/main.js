@@ -12,6 +12,8 @@ btn.addEventListener('click', (event)=>{
     if (selectedRating) {
         const ratingValue = selectedRating.value;
         ratingDisplay.textContent = `You selected ${ratingValue} out of 5`;
+      }else{
+        ratingDisplay.textContent = `You selected ${0} out of 5`;
       }
 
     rate.classList.toggle('hidden')

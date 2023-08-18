@@ -27,12 +27,12 @@
         text-align: center;
       }
       .attribution a {
-        color: hsl(228, 45%, 44%);
+        color: hsl(147, 88%, 52%);
       }
     </style>
   </head>
   <body
-    class="flex items-center justify-center h-screen bg-veryDarkBlue font-overPass"
+    class="flex relative items-center justify-center h-screen bg-veryDarkBlue font-overPass"
   >
     <!-- Rating state start -->
     <section id="rate">
@@ -64,7 +64,7 @@
               id="rating1"
               name="rating"
               value="1"
-              class="hidden peer/rating1"
+              class="hidden peer/rating1 required"
             />
             <label
               for="rating1"
@@ -166,9 +166,9 @@
 
     <!-- Thank you state end -->
 <script src="js/main.js"></script>
-    <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+    <div class="attribution fixed inset-x-0 bottom-0 flex items-center justify-center">
+    <p class="text-white pr-2">Challenge by  </p> <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="pr-2">Frontend Mentor</a>. 
+    <p class="text-white pr-2">Coded by</p> <a href="#">Beruk Berhanu</a>.
+  </div>
   </body>
 </html>
