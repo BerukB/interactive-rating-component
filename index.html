@@ -1,49 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body >
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="flex items-center justify-center h-screen bg-veryDarkBlue font-overPass"
+  >
+    <!-- Rating state start -->
+    <section id="rate">
+      <article
+        id="rate-me"
+        class="w-96 bg-darkBlue rounded-3xl px-7 py-6 space-y-5 bg-gradient-to-t from-from-50 to-to-50"
+      >
+        <div>
+          <img
+            class="rounded-full p-2 bg-darkBlue"
+            src="./images/icon-star.svg"
+            alt=""
+          />
+        </div>
 
-  <!-- Rating state start -->
+        <div>
+          <h2 class="text-lg text-white font-bold mb-2">How did we do?</h2>
 
-  How did we do?
+          <p class="text-lightGrey text-sm">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+        <form action="" class="flex flex-col space-y-8">
+          <div class="flex justify-between text-lightGrey">
+            <input
+              type="radio"
+              id="rating1"
+              name="rating"
+              value="1"
+              class="hidden peer/rating1"
+            />
+            <label
+              for="rating1"
+              class="rounded-full bg-darkBlue hover:bg-lightGrey  hover:text-white p-2 px-4 peer-checked/rating1:bg-orange peer-checked/rating1:text-white"
+              >1</label
+            >
+            <input
+              type="radio"
+              id="rating2"
+              name="rating"
+              value="2"
+              class="hidden peer/rating2"
+            />
+            <label
+              for="rating2"
+              class="rounded-full bg-darkBlue hover:bg-lightGrey  hover:text-white p-2 px-4 peer-checked/rating2:bg-orange peer-checked/rating2:text-white"
+              >2</label
+            >
+            <input
+              type="radio"
+              id="rating3"
+              name="rating"
+              value="3"
+              class="hidden peer/rating3"
+            />
+            <label
+              for="rating3"
+              class="rounded-full bg-darkBlue hover:bg-lightGrey hover:text-white p-2 px-4 peer-checked/rating3:bg-orange peer-checked/rating3:text-white"
+              >3</label
+            >
+            <input
+              type="radio"
+              id="rating4"
+              name="rating"
+              value="4"
+              class="hidden peer/rating4"
+            />
+            <label
+              for="rating4"
+              class="rounded-full bg-darkBlue hover:bg-lightGrey  hover:text-white p-2 px-4 peer-checked/rating4:bg-orange peer-checked/rating4:text-white" 
+              >4</label
+            >
+            <input
+              type="radio"
+              id="rating5"
+              name="rating"
+              value="5"
+              class="hidden peer/rating5"
+            />
+            <label
+              for="rating5"
+              class="rounded-full bg-darkBlue hover:bg-lightGrey  hover:text-white p-2 px-4 peer-checked/rating5:bg-orange peer-checked/rating5:text-white"
+              >5</label
+            >
+          </div>
 
-  1 2 3 4 5
+          <button
+            id="rate-btn"
+            type="submit"
+            class="flex-1 py-1.5 bg-orange text-white rounded-full hover:bg-white hover:text-orange "
+          >
+            SUBMIT
+          </button>
+        </form>
+      </article>
+    </section>
 
-  Submit
+    <!-- Rating state end -->
 
-  <!-- Rating state end -->
+    <!-- Thank you state start -->
+    <section id="thanks">
+      <article
+        id="thank-you"
+        class="hidden flex-col items-center w-96 bg-darkBlue rounded-3xl px-7 py-6 space-y-5 bg-gradient-to-t from-from-50 to-to-50"
+      >
+        <div>
+          <img
+            class="rounded-full p-2"
+            src="./images/illustration-thank-you.svg"
+            alt=""
+          />
+        </div>
 
-  <!-- Thank you state start -->
+        <div class="mb-8">
+          <p id="rating-display" class="text-orange bg-darkBlue rounded-full p-1 px-4 text-xs">
+            You selected 4 out of 5
+          </p>
+        </div>
 
-  You selected <!-- Add rating here --> out of 5
+        <div class="flex flex-col items-center">
+          <h2 class="text-lg text-white font-bold mb-2">Thank you!</h2>
+          <p class="text-lightGrey text-sm text-center">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </article>
+    </section>
 
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
+    <!-- Thank you state end -->
+<script src="js/main.js"></script>
+    <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  </div> -->
+  </body>
 </html>
