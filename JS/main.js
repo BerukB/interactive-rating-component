@@ -3,7 +3,7 @@ const rate = document.getElementById('rate-me');
 const thank = document.getElementById('thank-you');
 const ratingDisplay = document.getElementById('rating-display');
 
-btn.addEventListener('click', (event)=>{
+btn.addEventListener('submit', (event)=>{
 
     event.preventDefault();
 
