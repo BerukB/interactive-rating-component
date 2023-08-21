@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repo](https://github.com/BerukB/interactive-rating-component)
-- Live Site URL: [Live Site](https://interactive-rating-component-q6p9f3usd-berukb.vercel.app/)
+- Live Site URL: [Live Site](https://64e2511bb6215b034b6dfb7a--storied-valkyrie-dbc174.netlify.app/)
 
 ### Built with
 
